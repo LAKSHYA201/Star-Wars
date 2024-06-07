@@ -1,0 +1,111 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  background-image: url(./images/background.jpg);
+}
+.page-container {
+  display: grid;
+  grid-template-rows: 15vh 7vh 78vh;
+}
+.hero {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #131313, #4600c8);
+}
+.hero:hover {
+  background: radial-gradient(circle at center, #131313, #00b62d);
+  cursor: cell;
+}
+.nav-bar {
+  color: white;
+  font-size: x-large;
+  display: grid;
+  grid-template-columns: 0.5fr 4.75fr 5.25fr;
+  background: linear-gradient(to right, #040404, #757575);
+}
+.navDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar div {
+  border-left: 1.5px solid rgb(106, 106, 106);
+  border-left: 1.5px solid rgb(106, 106, 106);
+}
+.menu:hover {
+  background: radial-gradient(circle at center, #131313, #393939);
+  cursor: pointer;
+}
+.menu {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.content-holder {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.menu-items-holder {
+  margin-top: 0.2px;
+  background: linear-gradient(to bottom, #323232, #5b5b5b);
+}
+
+.menu-item {
+  height: 70px;
+  padding-top: 30px;
+  color: white;
+  font-size: x-large;
+  border: 3px solid #656565;
+}
+.menu-item:hover {
+  cursor: pointer;
+}
+.carousel-holder {
+  display: grid;
+  grid-template-columns: 1fr 768px 1fr;
+  grid-template-rows: 1fr 432px 1fr;
+}
+.left-arrow-holder {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.right-arrow-holder {
+  grid-row: 1/4;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slider {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: #131313;
+  box-shadow: 0px 0px 12px 10px rgb(74, 0, 74);
+}
+.music-holder {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+}
+.visibleImg {
+  position: absolute;
+  z-index: 1;
+}
+#arrowBtn:hover {
+  cursor: pointer;
+}
+.sand {
+  color: yellow;
+  align-self: center;
+}
+.player:hover {
+  cursor: pointer;
+}
